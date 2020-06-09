@@ -16,10 +16,10 @@ Registration.destroy_all
 
 
 c1 = Coach.create(name: "Junior Cruz", img: "https://i.pinimg.com/originals/04/72/ca/0472cae3ad624ff764692d7c3be455e8.jpg", specialty: "Bodybuilding", bio: "NOT JUST TRAINING I AM ALSO A FITNESS THEORIST WRITING BOOKS ABOUT FOOD AND WORKOUTS")
-c2 = Coach.create(name: "Dawit Gizaw", img: "https://i.ya-webdesign.com/images/fitness-trainer-png-4.png", specialty: "Fitness", bio: "Just do it")
-c3 = Coach.create(name: "Carla Sahagun", img: "https://i.ya-webdesign.com/images/muscle-girl-png-2.png", specialty: "Yoga", bio: "LET’S GET MOVING I REALLY KNOW HOW TO PUSH MY CLIENTS TO LOOK AND FEEL AMAZING!")
-c4 = Coach.create(name: "Beza Sirak", img: "https://i.ya-webdesign.com/images/female-arm-muscle-png-6.png", specialty: "Swimming", bio: "Teaching water safety in the gym just got easier.")
-c5 = Coach.create(name: "Mark Doritos", img: "https://www.pngkit.com/png/full/655-6556182_crossfit.png", specialty: "CrossFit", bio: "COACHING PROGRAMS EVEN A BEGINNER IN CROSSFIT CAN BENEFIT FROM MY WORKOUT PROGRAMS")
+c2 = Coach.create(name: "Dawit Gizaw", img: "https://i.ya-webdesign.com/images/fitness-trainer-png-4.png", specialty: "Fitness", bio: "Just do it kjdsfkashfkjahsflkashflkashflkajsdfhalkjfhaskjfhaskjfahfkjahd")
+c3 = Coach.create(name: "Carla Sahagun", img: "https://i.ya-webdesign.com/images/muscle-girl-png-2.png", specialty: "Yoga", bio: "LET’S GET MOVING I REALLY KNOW HOW TO PUSH MY CLIENTS TO LOOK AND FEEL AMAZING! dfsfasfkasjfhakjsdfhkasfh")
+c4 = Coach.create(name: "Beza Sirak", img: "https://i.ya-webdesign.com/images/female-arm-muscle-png-6.png", specialty: "Swimming", bio: "Teaching water safety in the gym just got easier.sdfkabfkjasbfjasbfmasbfamnsfbajfa")
+c5 = Coach.create(name: "Mark Doritos", img: "https://www.pngkit.com/png/full/655-6556182_crossfit.png", specialty: "CrossFit", bio: "COACHING PROGRAMS EVEN A BEGINNER IN CROSSFIT CAN BENEFIT FROM MY WORKOUT PROGRAMS.sdfadfasfasfafa")
 
 u1 = User.create(name: "Alex Didio", email: "alex.didio@gmail.com", password_digest: BCrypt::Password.create('password'), img: "https://pngimg.com/uploads/man/man_PNG6531.png")
 u2 = User.create(name: "Anniya Rika", email: "aniiya.rika@gmail.com", password_digest: BCrypt::Password.create('password'), img: "https://pngimg.com/uploads/girls/girls_PNG6481.png")
