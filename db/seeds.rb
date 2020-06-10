@@ -29,6 +29,7 @@ u3 = User.create(name: "Sarah Smith", email: "sarah.smith@gmail.com", password_d
 s1 = Session.create(title: "Yoga", date_time: DateTime.new(2020,11,19,8,37), img: "https://images.squarespace-cdn.com/content/v1/599efce9ff7c50af933a91c7/1529087408611-Q5WHXDR41IVYSJO7ZV03/ke17ZwdGBToddI8pDm48kM-aw22U0LHZx6qf2ef5PkhZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxRug9GfYMEIAzXK-6wwZCdB3yvAQZhtQErvIj8lKPzGgCROaeqpmMCtcnEEFIDXd4/yoga+pose.png", duration: "1h 30min", coach_id: c3.id)
 s2 = Session.create(title: "Bodybuilding", date_time: DateTime.new(2020,11,20,5,37), img: "https://c4.wallpaperflare.com/wallpaper/894/720/1015/woman-man-workout-fitness-wallpaper-preview.jpg", duration: "1h", coach_id: c1.id)
 s3 = Session.create(title: "Fitness", date_time: DateTime.new(2020,11,21,3,37), img: "https://pluspng.com/img-png/png-fitness-fitness-png-image-645.png", duration: "1h", coach_id: c2.id)
+# s4 = Session.create(title: "CrossFit", date_time: DateTime.new(2020,11,16,3,37), img: "https://bayviewcompass.com/wp-content/uploads/2015/08/LEAD-PHOTO-Cream-City-Cross-Fit-SMALL-KRESSE-1024x681.jpg", duration: "40min", coach_id: c5.id)
 
 
 regi1 = Registration.create(user_id: u1.id, session_id: s1.id) #t4.id
