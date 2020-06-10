@@ -7,9 +7,9 @@ class AuthController < ApplicationController
             payload = {user_id: user.id}
             token = encode(payload)
             new_hash = {}
-            new_hash["user_data"] = user # user from line 6
-            new_hash["token"] = token #token from line 11
-            render json: new_hash
+            #new_hash["user_data"] = user # user from line 6
+            #new_hash["token"] = token #token from line 11
+            render :json => {user_data: user.as_json(include: [:sessions]), token: token}
 
         else
             render json: {

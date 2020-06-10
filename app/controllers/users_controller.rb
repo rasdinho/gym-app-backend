@@ -32,7 +32,7 @@ class UsersController < ApplicationController
         def profile
             token = request.headers["Authenticate"]
             user = User.find(decode(token)["user_id"])
-            render json: user
+            render json: user.to_json(include: [:sessions])
         end
     
         def users_params
