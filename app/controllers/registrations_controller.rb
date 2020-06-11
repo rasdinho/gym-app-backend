@@ -1,6 +1,5 @@
 class RegistrationsController < ApplicationController
 
-    
     def index 
         registrations = Registration.all
         render json: registrations.as_json(include: [:user, :session] , except: [:created_at, :updated_at])
@@ -20,13 +19,12 @@ class RegistrationsController < ApplicationController
     def destroy 
         registration = Registration.find(params[:id])
         registration.destroy
-      end
+    end
 
-      def delete
+    def delete
         user = User.find(params[:user_id])
         registration = Registration.find_by(user_id: params[:user_id], session_id: params[:session_id])
         registration.destroy
-        
         render json: user.to_json(include: [:sessions])
-      end
+    end
 end
