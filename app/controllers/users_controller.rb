@@ -28,11 +28,18 @@ class UsersController < ApplicationController
             end
         end
     
-       
         def profile
             token = request.headers["Authenticate"]
             user = User.find(decode(token)["user_id"])
             render json: user.to_json(include: [:sessions])
+        end
+
+        def update
+            update_user = User.find(params[:id])
+            # user = update_user.update(name: params[:name], img: params[:img], email: params[:email], password: params[:password])
+            user = update_user.update(name: params[:name], img: params[:img], email: params[:email])
+
+            render json: user
         end
     
         def users_params
