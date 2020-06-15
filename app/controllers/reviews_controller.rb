@@ -10,12 +10,10 @@ class ReviewsController < ApplicationController
     end
 
     def create 
-        review = Review.create(content: params[:content], rating: params[:rating], user_id: params[:user_id], coach_id: params[:coach_id])
+        review = Review.create(content: params[:content], user_id: params[:user_id], coach_id: params[:coach_id])
+        # byebug
         render json: review
     end
-    
 
-
-    
 
 end

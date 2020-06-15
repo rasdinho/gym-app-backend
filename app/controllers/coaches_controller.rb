@@ -6,7 +6,8 @@ class CoachesController < ApplicationController
 
     def show
         coach = Coach.find(params[:id])
-        render json: coach
+        render :json => coach.as_json(include: :reviews)
+        # render json: coach
     end
 
     def create 
