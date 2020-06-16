@@ -1,12 +1,13 @@
 class ReviewsController < ApplicationController
     def index 
         reviews = Review.all
-        render json: reviews.as_json(except: [:created_at, :updated_at])
+        render json: reviews.as_json(include: [:user], except: [:updated_at])
     end
 
     def show
-        review = Review.find(params[:id])
-        render json: review
+        # review = Review.find(params[:id])
+        reviews = Review.where(coach_id: params[:id])
+        render json: reviews.as_json(include: [:user, :coach])
     end
 
     def create 
